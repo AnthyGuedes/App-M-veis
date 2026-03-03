@@ -12,6 +12,10 @@ public class Aluno implements Serializable {
 
     private int telefone;
 
+    private String curso;
+
+    private String endereco;
+
     public String getNome() {
         return nome;
     }
@@ -44,5 +48,19 @@ public class Aluno implements Serializable {
         this.telefone = telefone;
     }
 
+    public String getCurso() {
+        return curso;
+    }
 
+    public void setCurso(String curso) {
+        this.curso = curso;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
 }

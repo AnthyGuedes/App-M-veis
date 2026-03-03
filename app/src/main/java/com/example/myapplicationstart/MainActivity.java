@@ -1,6 +1,7 @@
 package com.example.myapplicationstart;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -15,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText nome;
     private EditText cpf;
     private EditText telefone;
-
+    private EditText endereco;
+    private EditText curso;
     private AlunoDAO dao;
 
     @Override
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         nome = findViewById(R.id.editTextNome);
         cpf = findViewById(R.id.editTextCpf);
         telefone = findViewById(R.id.editTextTelefone);
+        endereco = findViewById(R.id.editTextEndereco);
+        curso = findViewById(R.id.editTextCurso);
 
         dao = new AlunoDAO(this);
     }
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         a.setNome(nome.getText().toString());
         a.setCpf(cpf.getText().toString());
         a.setTelefone(Integer.parseInt(telefone.getText().toString()));
-        long id = dao.inserir(a); // inserir aluno
+        long id = dao.Inserir(a); // inserir aluno
         Toast.makeText(this, "Aluno inserido com id: ", +id, Toast.LENGTH_SHORT).show();
     }
 

@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:text="Telefone"
         tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="300dp" />
+        tools:layout_editor_absoluteY="283dp" />
 
     <EditText
         android:id="@+id/editTextTelefone"
@@ -55,7 +55,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="343dp" />
+        tools:layout_editor_absoluteY="314dp" />
 
     <Button
         android:id="@+id/buttonSalvar"
@@ -66,5 +66,39 @@
         android:onClick="salvar"
         tools:layout_editor_absoluteX="159dp"
         tools:layout_editor_absoluteY="624dp" />
+
+    <TextView
+        android:id="@+id/textViewEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <EditText
+        android:id="@+id/editTextEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="422dp" />
+
+    <TextView
+        android:id="@+id/textViewCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Curso"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="501dp" />
+
+    <EditText
+        android:id="@+id/editTextCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="541dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

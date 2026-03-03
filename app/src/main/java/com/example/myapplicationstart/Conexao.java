@@ -1,5 +1,6 @@
 package com.example.myapplicationstart;
 
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -14,7 +15,7 @@ public class Conexao extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db){
         db.execSQL("create table aluno(id integer primary key autoincrement, "+
-                "nome varchar(50), cpf varchar(50), telefone int(15))"));
+                "nome varchar(50), cpf varchar(50), telefone int(15), endereco varchar(50), curso varchar(50))");
     }
 
     @Override
